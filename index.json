@@ -9,7 +9,7 @@
 			"git": "https://github.com/openfl/actuate.git",
 			"ref": "1.9.0",
 			"license": "MIT",
-			"checked": "2026-10-13",
+			"checked": "2026-10-14",
 			"commit": "7a6a42e5bd9f65a581538577cfeb0c15c3001eab",
 			"verdict": "yes",
 			"summary": "compiles for the web and for native"
@@ -21,7 +21,7 @@
 			"git": "https://github.com/haxetink/tink_core.git",
 			"ref": "2.1.1",
 			"license": "MIT",
-			"checked": "2026-10-13",
+			"checked": "2026-10-14",
 			"commit": "414a0538630f9e2b2103253f9998003ca7158ec4",
 			"verdict": "yes",
 			"summary": "compiles for the web and for native"
@@ -33,7 +33,7 @@
 			"git": "https://github.com/nadako/hxjsonast.git",
 			"ref": "1.1.0",
 			"license": "MIT",
-			"checked": "2026-10-13",
+			"checked": "2026-10-14",
 			"commit": "3131eb00097ab6c6be2d43094189d5c4254dcb8c",
 			"verdict": "yes",
 			"summary": "compiles for the web and for native"
@@ -48,7 +48,7 @@
 			"dependencies": [
 				"hxjsonast"
 			],
-			"checked": "2026-10-13",
+			"checked": "2026-10-14",
 			"commit": "a75859de1e966c09e73591b6c9186086c143fe60",
 			"verdict": "yes",
 			"summary": "compiles for the web and for native"
@@ -60,7 +60,7 @@
 			"git": "https://github.com/HaxeFoundation/format.git",
 			"ref": "775a06f0a7aa64cbd060b5c3ba62f65d7fed684a",
 			"license": "BSD",
-			"checked": "2026-10-13",
+			"checked": "2026-10-14",
 			"commit": "775a06f0a7aa64cbd060b5c3ba62f65d7fed684a",
 			"verdict": "partly",
 			"summary": "compiles for the web and for native with 2 module(s) left out; left out: format.tools.MemoryInput, format.tools.MemoryBytes (for the web, it is written for flash, which a Weave game never is; for native, it is written for flash, which a Weave game never is)"
@@ -72,7 +72,7 @@
 			"git": "https://github.com/HaxeFoundation/hscript.git",
 			"ref": "2.7.0",
 			"license": "MIT",
-			"checked": "2026-10-13",
+			"checked": "2026-10-14",
 			"commit": "546d6fafaca59c7bde2a8613ba683e690e4507cb",
 			"verdict": "partly",
 			"summary": "compiles for the web and for native with 1 module(s) left out; left out: hscript.JsInterp (for native, it uses the browser's own objects, which a native game does not have)"
@@ -84,7 +84,7 @@
 			"git": "https://github.com/dpeek/haxe-markdown.git",
 			"ref": "1.1.3",
 			"license": "MIT",
-			"checked": "2026-10-13",
+			"checked": "2026-10-14",
 			"commit": "d4f20e8680441b1e3214b0e531307b3094283ed0",
 			"verdict": "yes",
 			"summary": "compiles for the web and for native"
@@ -97,10 +97,10 @@
 			"ref": "2c980bb59875b0d32144a71867fbdebb2f77cd20",
 			"header": "stb_perlin.h",
 			"license": "MIT or public domain",
-			"checked": "2026-10-13",
+			"checked": "2026-10-14",
 			"commit": "2c980bb59875b0d32144a71867fbdebb2f77cd20",
 			"verdict": "yes",
-			"summary": "6 function(s) bound: stb_perlin_noise3, stb_perlin_noise3_seed, stb_perlin_ridge_noise3, stb_perlin_fbm_noise3, stb_perlin_turbulence_noise3, stb_perlin_noise3_wrap_nonpow2"
+			"summary": "6 function(s) bound and compiled: stb_perlin_noise3, stb_perlin_noise3_seed, stb_perlin_ridge_noise3, stb_perlin_fbm_noise3, stb_perlin_turbulence_noise3, stb_perlin_noise3_wrap_nonpow2"
 		},
 		{
 			"name": "FastNoiseLite",
@@ -110,10 +110,49 @@
 			"ref": "v1.1.1",
 			"header": "C/FastNoiseLite.h",
 			"license": "MIT",
-			"checked": "2026-10-13",
+			"checked": "2026-10-14",
 			"commit": "7ccfbc16eb1c932568f177d63a9ba51d89bbe516",
 			"verdict": "yes",
-			"summary": "69 function(s) bound: fnlCreateState, fnlGetNoise2D, fnlGetNoise3D, fnlDomainWarp2D, fnlDomainWarp2D_x, fnlDomainWarp2D_y, …"
+			"summary": "69 function(s) bound and compiled: fnlCreateState, fnlGetNoise2D, fnlGetNoise3D, fnlDomainWarp2D, fnlDomainWarp2D_x, fnlDomainWarp2D_y, …"
+		},
+		{
+			"name": "cJSON",
+			"kind": "native",
+			"description": "A small, fast JSON parser and printer in C.",
+			"git": "https://github.com/DaveGamble/cJSON.git",
+			"ref": "v1.7.19",
+			"header": "cJSON.h",
+			"license": "MIT",
+			"checked": "2026-10-14",
+			"commit": "c859b25da02955fef659d658b8f324b5cde87be3",
+			"verdict": "yes",
+			"summary": "83 function(s) bound and compiled: cJSON_Version, cJSON_InitHooks, cJSON_Parse, cJSON_ParseWithLength, cJSON_Print, cJSON_PrintUnformatted, …"
+		},
+		{
+			"name": "tinyexpr",
+			"kind": "native",
+			"description": "Evaluate maths typed as text, such as \"sqrt(x^2 + 1)\": for formulas and mods.",
+			"git": "https://github.com/codeplea/tinyexpr.git",
+			"ref": "v1.1.1",
+			"header": "tinyexpr.h",
+			"license": "zlib",
+			"checked": "2026-10-14",
+			"commit": "6d2233ce14dca063994708a91b3b98e24e8aa0c3",
+			"verdict": "yes",
+			"summary": "2 function(s) bound and compiled: te_interp, te_interp_error"
+		},
+		{
+			"name": "lz4",
+			"kind": "native",
+			"description": "Very fast compression: smaller save files and downloads.",
+			"git": "https://github.com/lz4/lz4.git",
+			"ref": "v1.10.0",
+			"header": "lib/lz4.h",
+			"license": "BSD-2-Clause",
+			"checked": "2026-10-14",
+			"commit": "ebb370ca83af193212df4dcbadcc5d87bc0de2f0",
+			"verdict": "yes",
+			"summary": "22 function(s) bound and compiled: LZ4_versionNumber, LZ4_versionString, LZ4_compress_default, LZ4_decompress_safe, LZ4_compressBound, LZ4_compress_fast, …"
 		}
 	],
 	"checkedWith": "1.0.48"

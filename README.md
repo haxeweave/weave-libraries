@@ -28,6 +28,9 @@ from the header named in `"header"`, as **New from a C header…** binds one.
 }
 ```
 
+`minWeave` (optional) is the oldest Weave an entry works with, for one that
+needs something newer than the rest; an older editor lists it greyed.
+
 `verdict`, `summary`, `checked` and `commit` are written by the check, not by
 hand: in a Weave checkout, `node scripts/library-index.mjs <path>/index.json
 --write`. The verdict is `yes` (works on the web and natively), `partly`
