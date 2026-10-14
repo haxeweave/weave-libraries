@@ -1,0 +1,120 @@
+{
+	"format": 1,
+	"about": "Libraries checked to work in Weave games: Weave lists these in Project Settings ▸ Libraries ▸ Add from the Weave library index, fetches the chosen one at its pin, and checks it again on arrival.",
+	"libraries": [
+		{
+			"name": "actuate",
+			"kind": "haxe",
+			"description": "Tweening with chained calls: any property, delays, repeats, callbacks.",
+			"git": "https://github.com/openfl/actuate.git",
+			"ref": "1.9.0",
+			"license": "MIT",
+			"checked": "2026-10-13",
+			"commit": "7a6a42e5bd9f65a581538577cfeb0c15c3001eab",
+			"verdict": "yes",
+			"summary": "compiles for the web and for native"
+		},
+		{
+			"name": "tink_core",
+			"kind": "haxe",
+			"description": "Futures, outcomes, signals and other building blocks.",
+			"git": "https://github.com/haxetink/tink_core.git",
+			"ref": "2.1.1",
+			"license": "MIT",
+			"checked": "2026-10-13",
+			"commit": "414a0538630f9e2b2103253f9998003ca7158ec4",
+			"verdict": "yes",
+			"summary": "compiles for the web and for native"
+		},
+		{
+			"name": "hxjsonast",
+			"kind": "haxe",
+			"description": "JSON parsing and printing that keeps where each value came from.",
+			"git": "https://github.com/nadako/hxjsonast.git",
+			"ref": "1.1.0",
+			"license": "MIT",
+			"checked": "2026-10-13",
+			"commit": "3131eb00097ab6c6be2d43094189d5c4254dcb8c",
+			"verdict": "yes",
+			"summary": "compiles for the web and for native"
+		},
+		{
+			"name": "json2object",
+			"kind": "haxe",
+			"description": "Typed JSON: parse straight into your own classes, with errors that say where.",
+			"git": "https://github.com/elnabo/json2object.git",
+			"ref": "a75859de1e966c09e73591b6c9186086c143fe60",
+			"license": "MIT",
+			"dependencies": [
+				"hxjsonast"
+			],
+			"checked": "2026-10-13",
+			"commit": "a75859de1e966c09e73591b6c9186086c143fe60",
+			"verdict": "yes",
+			"summary": "compiles for the web and for native"
+		},
+		{
+			"name": "format",
+			"kind": "haxe",
+			"description": "Readers and writers for file formats: PNG, ZIP, WAV, TGA, BMP and more.",
+			"git": "https://github.com/HaxeFoundation/format.git",
+			"ref": "775a06f0a7aa64cbd060b5c3ba62f65d7fed684a",
+			"license": "BSD",
+			"checked": "2026-10-13",
+			"commit": "775a06f0a7aa64cbd060b5c3ba62f65d7fed684a",
+			"verdict": "partly",
+			"summary": "compiles for the web and for native with 2 module(s) left out; left out: format.tools.MemoryInput, format.tools.MemoryBytes (for the web, it is written for flash, which a Weave game never is; for native, it is written for flash, which a Weave game never is)"
+		},
+		{
+			"name": "hscript",
+			"kind": "haxe",
+			"description": "A Haxe interpreter: run script text a player or a mod writes.",
+			"git": "https://github.com/HaxeFoundation/hscript.git",
+			"ref": "2.7.0",
+			"license": "MIT",
+			"checked": "2026-10-13",
+			"commit": "546d6fafaca59c7bde2a8613ba683e690e4507cb",
+			"verdict": "partly",
+			"summary": "compiles for the web and for native with 1 module(s) left out; left out: hscript.JsInterp (for native, it uses the browser's own objects, which a native game does not have)"
+		},
+		{
+			"name": "markdown",
+			"kind": "haxe",
+			"description": "Markdown to HTML or a tree of nodes, for in-game help and text.",
+			"git": "https://github.com/dpeek/haxe-markdown.git",
+			"ref": "1.1.3",
+			"license": "MIT",
+			"checked": "2026-10-13",
+			"commit": "d4f20e8680441b1e3214b0e531307b3094283ed0",
+			"verdict": "yes",
+			"summary": "compiles for the web and for native"
+		},
+		{
+			"name": "stb_perlin",
+			"kind": "native",
+			"description": "Perlin noise in one C header: terrain, clouds, wobble.",
+			"git": "https://github.com/nothings/stb.git",
+			"ref": "2c980bb59875b0d32144a71867fbdebb2f77cd20",
+			"header": "stb_perlin.h",
+			"license": "MIT or public domain",
+			"checked": "2026-10-13",
+			"commit": "2c980bb59875b0d32144a71867fbdebb2f77cd20",
+			"verdict": "yes",
+			"summary": "6 function(s) bound: stb_perlin_noise3, stb_perlin_noise3_seed, stb_perlin_ridge_noise3, stb_perlin_fbm_noise3, stb_perlin_turbulence_noise3, stb_perlin_noise3_wrap_nonpow2"
+		},
+		{
+			"name": "FastNoiseLite",
+			"kind": "native",
+			"description": "Fast noise in C: OpenSimplex, cellular, value, fractals, domain warp.",
+			"git": "https://github.com/Auburn/FastNoiseLite.git",
+			"ref": "v1.1.1",
+			"header": "C/FastNoiseLite.h",
+			"license": "MIT",
+			"checked": "2026-10-13",
+			"commit": "7ccfbc16eb1c932568f177d63a9ba51d89bbe516",
+			"verdict": "yes",
+			"summary": "69 function(s) bound: fnlCreateState, fnlGetNoise2D, fnlGetNoise3D, fnlDomainWarp2D, fnlDomainWarp2D_x, fnlDomainWarp2D_y, …"
+		}
+	],
+	"checkedWith": "1.0.48"
+}
